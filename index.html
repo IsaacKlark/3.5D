@@ -1,0 +1,678 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+  <title>
+
+    The Divide Dimensionals Cubes
+
+  </title>
+
+</head>
+
+<body onload="draw()">
+  <svg width="800" height="600" id="f3" style.background-color: black;>
+    <line id="li1" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#846532; 
+      stroke-width:5" />
+    <line id="li2" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#126743; 
+      stroke-width:5" />
+
+    <line id="li3" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#905437; 
+      stroke-width:5" />
+
+    <line id="li4" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#546721; 
+      stroke-width:5" />
+
+    <line id="li5" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#234218; 
+      stroke-width:5" />
+    <line id="li6" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#354184; 
+      stroke-width:5" />
+
+    <line id="li7" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#554321; 
+      stroke-width:5" />
+
+    <line id="li8" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#678401; 
+      stroke-width:5" />
+
+    <line id="li9" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#091245; 
+      stroke-width:5" />
+
+    <line id="li10" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#082565; 
+      stroke-width:5" />
+
+    <line id="li11" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#073865; 
+      stroke-width:5" />
+
+    <line id="li12" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#064545; 
+      stroke-width:5" />
+
+    <line id="li13" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#078512; 
+      stroke-width:5" />
+
+    <line id="li14" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#019000; 
+      stroke-width:5" />
+
+    <line id="li15" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#101090; 
+      stroke-width:5" />
+
+    <line id="li16" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#105085; 
+      stroke-width:5" />
+
+    <line id="li17" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#043263; 
+      stroke-width:5" />
+
+    <line id="li18" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#034811; 
+      stroke-width:5" />
+
+    <line id="li19" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#023210; 
+      stroke-width:5" />
+
+    <line id="li20" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#492681; 
+      stroke-width:5" />
+
+    <line id="li21" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#876864; 
+      stroke-width:5" />
+
+    <line id="li22" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#125609; 
+      stroke-width:5" />
+
+    <line id="li23" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#348718; 
+      stroke-width:5" />
+
+    <line id="li24" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#630514; 
+      stroke-width:5" />
+
+    <line id="li25" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#768576; 
+      stroke-width:5" />
+
+    <line id="li26" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#329854; 
+      stroke-width:5" />
+
+    <line id="li27" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#123456; 
+      stroke-width:5" />
+
+    <line id="li28" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#231243; 
+      stroke-width:5" />
+
+    <line id="li29" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#738443; 
+      stroke-width:5" />
+
+    <line id="li30" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#433400; 
+      stroke-width:5" />
+
+    <line id="li31" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#987654; 
+      stroke-width:5" />
+
+    <line id="li32" x1="400" , y1="300" , x2="400" , y2="300" style="stroke:#192837; 
+      stroke-width:5" />
+  </svg>
+  </br>
+  <form name="a1">
+    <input type="radio" id="D3" name="dimension" />
+    3D
+
+    <input type="radio" id="D325" name="dimension" />
+    3.25D
+
+    <input type="radio" id="D35" name="dimension" />
+    3.5D
+
+    <input type="radio" id="D375" name="dimension" />
+    3.75D
+
+    <input type="radio" id="D4" name="dimension" checked />
+    4D
+    </br>
+    <!-- <input type="button" name="a2" id="but" value="Show Cube" onClick="draw();" /> -->
+
+    <input type="checkbox" id="xy" />
+    xy
+
+    <input type="checkbox" id="xz" />
+    xz
+
+    <input type="checkbox" id="yz" />
+    yz
+
+    <input type="checkbox" id="xw" />
+    xw
+
+    <input type="checkbox" id="yw" />
+    yw
+
+    <input type="checkbox" id="zw" />
+    zw
+
+    <input type="button" name="a22" id="but2" value="Reset" onClick="reset2();" />
+  </form>
+
+  <script>
+    var xc = 400;
+    var yc = 300;
+    var x1 = [100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100];
+    var x2 = [-100, -100, 100, 100, -100, -100, 100, 100, 100, -100, -100, 100, -100, -100, 100, 100, -100, -100, 100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100];
+    var y1 = [100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100];
+    var y2 = [100, -100, -100, 100, 100, -100, -100, 100, 100, 100, -100, -100, 100, -100, -100, 100, 100, -100, -100, 100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100];
+    var x1m = [100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100];
+    var x2m = [-100, -100, 100, 100, -100, -100, 100, 100, 100, -100, -100, 100, -100, -100, 100, 100, -100, -100, 100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100];
+    var y1m = [100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100];
+    var y2m = [100, -100, -100, 100, 100, -100, -100, 100, 100, 100, -100, -100, 100, -100, -100, 100, 100, -100, -100, 100, 100, 100, -100, -100, 100, 100, -100, -100, 100, 100, -100, -100];
+    var lines = new Array(32);
+    lines[0] = document.getElementById("li1");
+    lines[1] = document.getElementById("li2");
+    lines[2] = document.getElementById("li3");
+    lines[3] = document.getElementById("li4");
+    lines[4] = document.getElementById("li5");
+    lines[5] = document.getElementById("li6");
+    lines[6] = document.getElementById("li7");
+    lines[7] = document.getElementById("li8");
+    lines[8] = document.getElementById("li9");
+    lines[9] = document.getElementById("li10");
+    lines[10] = document.getElementById("li11");
+    lines[11] = document.getElementById("li12");
+    lines[12] = document.getElementById("li13");
+
+    lines[13] = document.getElementById("li14");
+
+    lines[14] = document.getElementById("li15");
+
+    lines[15] = document.getElementById("li16");
+
+    lines[16] = document.getElementById("li17");
+
+    lines[17] = document.getElementById("li18");
+
+    lines[18] = document.getElementById("li19");
+
+    lines[19] = document.getElementById("li20");
+
+    lines[20] = document.getElementById("li21");
+
+    lines[21] = document.getElementById("li22");
+
+    lines[22] = document.getElementById("li23");
+
+    lines[23] = document.getElementById("li24");
+
+    lines[24] = document.getElementById("li25");
+
+    lines[25] = document.getElementById("li26");
+
+    lines[26] = document.getElementById("li27");
+
+    lines[27] = document.getElementById("li28");
+
+    lines[28] = document.getElementById("li29");
+
+    lines[29] = document.getElementById("li30");
+
+    lines[30] = document.getElementById("li31");
+
+    lines[31] = document.getElementById("li32");
+
+
+
+    var xo1 = new Array(32);
+
+    var yo1 = new Array(32);
+
+    var xo2 = new Array(32);
+
+    var yo2 = new Array(32);
+
+    var timerDraw;
+
+    var checkXY = document.getElementById("xy");
+
+    var xyAngle = 0;
+
+    var xyRad;
+
+    var checkXZ = document.getElementById("xz");
+
+    var z1 = [100, 100, 100, 100, -100, -100, -100, -100, 100, 100, 100, 100, 100, 100, 100, 100, -100, -100, -100, -100, 100, 100, 100, 100, 100, 100, 100, 100, -100, -100, -100, -100];
+
+    var z2 = [100, 100, 100, 100, -100, -100, -100, -100, -100, -100, -100, -100, 100, 100, 100, 100, -100, -100, -100, -100, -100, -100, -100, -100, 100, 100, 100, 100, -100, -100, -100, -100];
+
+    var z1m = [100, 100, 100, 100, -100, -100, -100, -100, 100, 100, 100, 100, 100, 100, 100, 100, -100, -100, -100, -100, 100, 100, 100, 100, 100, 100, 100, 100, -100, -100, -100, -100];
+
+    var z2m = [100, 100, 100, 100, -100, -100, -100, -100, -100, -100, -100, -100, 100, 100, 100, 100, -100, -100, -100, -100, -100, -100, -100, -100, 100, 100, 100, 100, -100, -100, -100, -100];
+
+
+    var w1 = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 100, 100, 100, 100, 100, 100, 100, 100];
+
+    var w2 = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100];
+
+    var w1m = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 100, 100, 100, 100, 100, 100, 100, 100];
+
+    var w2m = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100];
+
+
+    var xzAngle = 0;
+
+    var xzRad;
+
+    var checkYZ = document.getElementById("yz");
+
+    var checkXW = document.getElementById("xw");
+
+    var checkYW = document.getElementById("yw");
+
+    var checkZW = document.getElementById("zw");
+
+    var yzAngle = 0;
+
+    var yzRad;
+
+    var xwAngle = 0;
+
+    var xwRad;
+
+    var ywAngle = 0;
+
+    var ywRad;
+
+    var zwAngle = 0;
+
+    var zwRad;
+
+    var a;
+
+    var b;
+
+    var c;
+
+    var d;
+
+    var e;
+
+    var f;
+
+    var g;
+
+    var h;
+
+    var o;
+
+    var p;
+
+    var z;
+
+    var w;
+
+
+    function draw() {
+
+
+
+      for (var i = 0; i < 32; i++) {
+
+        xo1[i] = xc + (x1[i]);
+
+        yo1[i] = yc + (y1[i]);
+
+        xo2[i] = xc + (x2[i]);
+
+        yo2[i] = yc + (y2[i]);
+
+
+
+
+
+        lines[i].setAttribute("x1", xo1[i]);
+
+        lines[i].setAttribute("y1", yo1[i]);
+
+        lines[i].setAttribute("x2", xo2[i]);
+
+        lines[i].setAttribute("y2", yo2[i]);
+
+
+
+
+      }
+
+
+      if (checkXY.checked) {
+
+        xyAngle++;
+
+
+      }
+
+
+
+
+      if (checkXZ.checked) {
+
+        xzAngle++;
+
+      }
+
+
+
+
+      if (checkYZ.checked) {
+
+        yzAngle++;
+
+      }
+
+
+      if (checkXW.checked) {
+
+        xwAngle++;
+
+      }
+
+
+      if (checkYW.checked) {
+
+        ywAngle++;
+
+      }
+
+
+      if (checkZW.checked) {
+
+        zwAngle++;
+
+      }
+
+
+
+      xyRad = xyAngle / 180 * Math.PI;
+
+
+      a = Math.cos(xyRad);
+
+      b = Math.sin(xyRad);
+
+
+      xzRad = xzAngle / 180 * Math.PI;
+
+      c = Math.cos(xzRad);
+
+      d = Math.sin(xzRad);
+
+
+      yzRad = yzAngle / 180 * Math.PI;
+
+      e = Math.cos(yzRad);
+
+      f = Math.sin(yzRad);
+
+
+
+      xwRad = xwAngle / 180 * Math.PI;
+
+      g = Math.cos(xwRad);
+
+      h = Math.sin(xwRad);
+
+
+      ywRad = ywAngle / 180 * Math.PI;
+
+      o = Math.cos(ywRad);
+
+      p = Math.sin(ywRad);
+
+
+      zwRad = zwAngle / 180 * Math.PI;
+
+      z = Math.cos(zwRad);
+
+      w = Math.sin(zwRad);
+
+
+      document.getElementById("f3").onmousedown = function (event) {
+
+        if (event.button == 0) {
+
+          xyAngle += 100;
+
+        }
+
+      }
+
+
+      if (document.getElementById("D4").checked) {
+        for (var i = 0; i < 32; i++) {
+
+          x1[i] = 550 * (450 * (x1m[i] * (a * c * g) + y1m[i] * (-b * c * g) + z1m[i] * (-d * g) + w1m[i] * (-h)) / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z) + w1m[i] * (-g * o * w)) + 450))
+            / ((x1m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y1m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z) + z1m[i] * (c * e * w - d * h * o * z - c * f * p * z)
+              + w1m[i] * (g * o * z)) + 550);
+
+
+
+          y1[i] = 550 * (450 * (x1m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y1m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z1m[i] * (-c * f * o + d * h * p) + w1m[i] * (-g * p))
+            / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+              + w1m[i] * (-g * o * w)) + 450)) / ((x1m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y1m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z)
+                + z1m[i] * (c * e * w - d * h * o * z - c * f * p * z) + w1m[i] * (g * o * z)) + 550);
+
+
+
+
+
+          x2[i] = 550 * (450 * (x2m[i] * (a * c * g) + y2m[i] * (-b * c * g) + z2m[i] * (-d * g) + w2m[i] * (-h)) / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z) + w2m[i] * (-g * o * w)) + 450))
+            / ((x2m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y2m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z) + z2m[i] * (c * e * w - d * h * o * z - c * f * p * z)
+              + w2m[i] * (g * o * z)) + 550);
+
+
+
+
+          y2[i] = 550 * (450 * (x2m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y2m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z2m[i] * (-c * f * o + d * h * p) + w2m[i] * (-g * p))
+            / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+              + w2m[i] * (-g * o * w)) + 450))
+            / ((x2m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y2m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z) + z2m[i] * (c * e * w - d * h * o * z - c * f * p * z)
+              + w2m[i] * (g * o * z)) + 550);
+
+
+
+        }
+
+
+      }
+      else if (document.getElementById("D3").checked) {
+        for (var i = 0; i < 32; i++) {
+
+          x1[i] = (450 * (x1m[i] * (a * c * g) + y1m[i] * (-b * c * g) + z1m[i] * (-d * g)) / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z)) + 450));
+
+
+
+          y1[i] = (450 * (x1m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y1m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z1m[i] * (-c * f * o + d * h * p))
+            / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+            ) + 450));
+
+
+
+
+
+
+
+
+          x2[i] = (450 * (x2m[i] * (a * c * g) + y2m[i] * (-b * c * g) + z2m[i] * (-d * g)) / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z)) + 450));
+
+
+
+          y2[i] = (450 * (x2m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y2m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z2m[i] * (-c * f * o + d * h * p))
+            / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+            ) + 450));
+
+
+
+
+
+
+
+        }
+
+
+      }
+      else if (document.getElementById("D325").checked) {
+        for (var i = 0; i < 32; i++) {
+
+          x1[i] = 550 * (450 * (x1m[i] * (a * c * g) + y1m[i] * (-b * c * g) + z1m[i] * (-d * g) + w1m[i] * (-h)) / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z)) + 450))
+            / ((x1m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z)) + 550);
+
+
+
+          y1[i] = 550 * (450 * (x1m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y1m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z1m[i] * (-c * f * o + d * h * p))
+            / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+            ) + 450)) / ((x1m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z)) + 550);
+
+
+
+
+
+
+          x2[i] = 550 * (450 * (x2m[i] * (a * c * g) + y2m[i] * (-b * c * g) + z2m[i] * (-d * g) + w2m[i] * (-h)) / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z)) + 450))
+            / ((x2m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z)) + 550);
+
+
+
+          y2[i] = 550 * (450 * (x2m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y2m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z2m[i] * (-c * f * o + d * h * p))
+            / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+            ) + 450)) / ((x2m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z)) + 550);
+
+
+
+
+
+        }
+
+
+      }
+      else if (document.getElementById("D35").checked) {
+        for (var i = 0; i < 32; i++) {
+
+          x1[i] = 550 * (450 * (x1m[i] * (a * c * g) + y1m[i] * (-b * c * g) + z1m[i] * (-d * g) + w1m[i] * (-h)) / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z)) + 450))
+            / ((x1m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y1m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z)) + 550);
+
+
+
+          y1[i] = 550 * (450 * (x1m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y1m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z1m[i] * (-c * f * o + d * h * p) + w1m[i] * (-g * p))
+            / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+            ) + 450)) / ((x1m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y1m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z)
+            ) + 550);
+
+
+
+
+
+
+          x2[i] = 550 * (450 * (x2m[i] * (a * c * g) + y2m[i] * (-b * c * g) + z2m[i] * (-d * g) + w2m[i] * (-h)) / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z)) + 450))
+            / ((x2m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y2m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z)) + 550);
+
+
+
+          y2[i] = 550 * (450 * (x2m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y2m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z2m[i] * (-c * f * o + d * h * p) + w2m[i] * (-g * p))
+            / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+            ) + 450)) / ((x2m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y2m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z)
+            ) + 550);
+
+
+
+
+
+        }
+
+
+      }
+
+
+      else if (document.getElementById("D375").checked) {
+        for (var i = 0; i < 32; i++) {
+
+          x1[i] = 550 * (450 * (x1m[i] * (a * c * g) + y1m[i] * (-b * c * g) + z1m[i] * (-d * g) + w1m[i] * (-h)) / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z) + w1m[i] * (-g * o * w)) + 450))
+            / ((x1m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y1m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z) + z1m[i] * (c * e * w - d * h * o * z - c * f * p * z)
+            ) + 550);
+
+
+
+          y1[i] = 550 * (450 * (x1m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y1m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z1m[i] * (-c * f * o + d * h * p) + w1m[i] * (-g * p))
+            / ((x1m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y1m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z1m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+              + w1m[i] * (-g * o * w)) + 450)) / ((x1m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y1m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z)
+                + z1m[i] * (c * e * w - d * h * o * z - c * f * p * z)) + 550);
+
+
+
+
+
+          x2[i] = 550 * (450 * (x2m[i] * (a * c * g) + y2m[i] * (-b * c * g) + z2m[i] * (-d * g) + w2m[i] * (-h)) / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z)
+            + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z) + w2m[i] * (-g * o * w)) + 450))
+            / ((x2m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y2m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z) + z2m[i] * (c * e * w - d * h * o * z - c * f * p * z)
+            ) + 550);
+
+
+
+
+          y2[i] = 550 * (450 * (x2m[i] * (b * e * o - a * d * f * o - a * c * h * p) + y2m[i] * (a * e * o + b * d * f * o + b * c * h * p) + z2m[i] * (-c * f * o + d * h * p) + w2m[i] * (-g * p))
+            / ((x2m[i] * (-a * c * h * o * w - b * e * p * w + a * d * f * p * w + a * d * e * z + b * f * z) + y2m[i] * (b * c * h * o * w - a * e * p * w - b * d * f * p * w - b * d * e * z + a * f * z) + z2m[i] * (d * h * o * w + c * f * p * w + c * e * z)
+              + w2m[i] * (-g * o * w)) + 450))
+            / ((x2m[i] * (a * d * e * w + b * f * w + a * c * h * o * z + b * e * p * z - a * d * f * p * z) + y2m[i] * (-b * d * e * w + a * f * w - b * c * h * o * z + a * e * p * z + b * d * f * p * z) + z2m[i] * (c * e * w - d * h * o * z - c * f * p * z)
+            ) + 550);
+
+
+        }
+
+
+      }
+
+
+      timerDraw = setTimeout("draw()", 40);
+
+
+    }
+
+    function reset() {
+
+      xyAngle = Number(0);
+
+      xzAngle = Number(0);
+
+      yzAngle = Number(0);
+
+      xwAngle = Number(0);
+
+      ywAngle = Number(0);
+
+      zwAngle = 0;
+
+    }
+
+
+
+    function reset2() {
+      xyAngle = 0;
+
+      xzAngle = 0;
+
+      yzAngle = 0;
+
+      xwAngle = 0;
+
+      ywAngle = 0;
+
+      zwAngle = 0;
+
+
+
+    }
+  </script>
+
+
+</body>
+
+</html>
